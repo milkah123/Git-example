@@ -1,0 +1,86 @@
+/* begin reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{display: block;}
+/*End reset */
+/*utility classes */
+.nowrap{
+    white-space: nowrap;
+}
+.offscreen{
+    position: absolute;
+    left: -9999px;
+}
+/* End utility classes*/
+body{
+    font-family: "Nunito",sans-serif;
+    min-height: 100vh;
+    background-color: aliceblue;
+      background-image: url(images/bubbles.png),linear-gradient( steelblue,purple,red,#fff);
+    background-repeat: no-repeat,repeat-y;
+    background-position:right center;  
+   /*  background:no-repeat url(images/),repeat-y linear-gradient( steelblue,purple,red,#fff); */
+    background-size: 75%,cover; 
+
+}
+.container{
+    /* background-color:rgb(133, 100, 58); */
+    background-image: url("images/part1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.hero{
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    /* background-color: #603a3afd; */
+
+   
+}
+
+.h1{
+    font-size: 300%;
+    color: aqua;
+    text-shadow: 2px 2px 4px red;
+    /* background-color: rgb(114, 108, 73);
+    padding: 0.25rem;
+   border-radius: 10px; */
+}
+.profile-pic-figure{
+    width: 35%;
+}
+.profile-pic-figure img{
+    width:100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double blue;
+    border-radius: 50%;
+}
+.example{
+    margin-top: 1rem;
+    padding-left:20px;
+    border: 2px solid red;
+}
+.example img{
+    width:25%;
+    height:auto;
+}
+.clip{
+    font-weight: bold;
+    font-size: 8rem;
+    align-self: center;
+    background-image: url("images/scenic.png");
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
